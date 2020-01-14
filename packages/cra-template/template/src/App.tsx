@@ -1,17 +1,17 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import styles from './styles';
 
 const App: React.FC = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div css={styles.app}>
+      <header css={styles.appHeader}>
+        <img src={logo} css={styles.appLogo} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
         <a
-          className="App-link"
+          css={styles.appLink}
           href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
@@ -21,6 +21,6 @@ const App: React.FC = () => {
       </header>
     </div>
   );
-}
+};
 
 export default App;

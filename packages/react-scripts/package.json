@@ -1,10 +1,10 @@
 {
-  "name": "react-scripts",
-  "version": "3.3.0",
+  "name": "@nijooke/react-scripts",
+  "version": "3.3.1",
   "description": "Configuration and scripts for Create React App.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/facebook/create-react-app.git",
+    "url": "https://gitlab.oxygem.tv/mindbaz/front/create-react-app.git",
     "directory": "packages/react-scripts"
   },
   "license": "MIT",
@@ -12,7 +12,7 @@
     "node": ">=8.10"
   },
   "bugs": {
-    "url": "https://github.com/facebook/create-react-app/issues"
+    "url": "https://gitlab.oxygem.tv/mindbaz/front/create-react-app/issues"
   },
   "files": [
     "bin",
@@ -29,6 +29,7 @@
   "types": "./lib/react-app.d.ts",
   "dependencies": {
     "@babel/core": "7.7.5",
+    "@emotion/babel-preset-css-prop": "^10.0.14",
     "@svgr/webpack": "4.3.3",
     "@typescript-eslint/eslint-plugin": "^2.10.0",
     "@typescript-eslint/parser": "^2.10.0",

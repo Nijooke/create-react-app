@@ -412,7 +412,11 @@ module.exports = function(webpackEnv) {
                 // @remove-on-eject-begin
                 babelrc: false,
                 configFile: false,
-                presets: [require.resolve('babel-preset-react-app')],
+                presets: [
+                  require.resolve('babel-preset-react-app'),
+                  require.resolve('@emotion/babel-preset-css-prop'),
+                ],
+
                 // Make sure we have a unique cache identifier, erring on the
                 // side of caution.
                 // We remove this when the user ejects because the default
@@ -425,6 +429,7 @@ module.exports = function(webpackEnv) {
                   [
                     'babel-plugin-named-asset-import',
                     'babel-preset-react-app',
+                    '@emotion/babel-preset-css-prop',
                     'react-dev-utils',
                     'react-scripts',
                   ]
@@ -467,6 +472,7 @@ module.exports = function(webpackEnv) {
                     require.resolve('babel-preset-react-app/dependencies'),
                     { helpers: true },
                   ],
+                  require.resolve('@emotion/babel-preset-css-prop')
                 ],
                 cacheDirectory: true,
                 // See #6846 for context on why cacheCompression is disabled
@@ -479,6 +485,7 @@ module.exports = function(webpackEnv) {
                   [
                     'babel-plugin-named-asset-import',
                     'babel-preset-react-app',
+                    '@emotion/babel-preset-css-prop',
                     'react-dev-utils',
                     'react-scripts',
                   ]
